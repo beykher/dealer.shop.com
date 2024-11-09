@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Producto - DealerStore</title>
+    <link rel="stylesheet" href="styles.prod.css">
+    <link rel="script" src="script.js">"
+</head>
+<body>
+    <header>
+        <h1>DealerStore.com</h1>
+    </header>
+
+    <div class="container">
+        <section id="product-detail">
+            <div class="product-detail">
+                <h2>Heroin - 0.1 gr</h2>
+                <img src="img/producto1.jpg" alt="Imagen de Heroin 0.1 gr">
+                <p><strong>Precio:</strong> $2,000 COP</p>
+                <p><strong>Descripción:</strong> Heroin de alta calidad, ideal para quienes buscan pureza y potencia. Disponible en presentaciones de 0.1 y 0.2 gramos. Viene en empaques sellados herméticamente para asegurar la frescura.</p>
+                <label for="quantity">Cantidad:</label>
+                <select id="quantity">
+                    <option value="1">1 gr</option>
+                    <option value="2">2 gr</option>
+                </select>
+                <button class="add-to-cart" data-name="Heroin 0.1 gr" data-price="2000" data-quantity="1">Añadir al Carrito</button>
+                <a href="htaml5.html"><button>Volver a la Tienda</button></a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Carrito de compras -->
+    <div class="cart-container" id="cart">
+        <div class="cart-header">
+            <h2>Carrito de Compras</h2>
+            <button onclick="closeCart()">Cerrar</button>
+        </div>
+        <div id="cart-items"></div>
+        <div id="cart-total"></div>
+        <div class="cart-actions">
+            <button onclick="toggleCart()">Ver Carrito</button>
+            <button onclick="checkout()">Pagar</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 DealerStore. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

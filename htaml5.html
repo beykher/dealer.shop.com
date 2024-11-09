@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DealerStore - Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DealerStore</h1>
+    </header>
+
+    <div class="container">
+        <section id="main">
+            <h2>Productos Destacados</h2>
+            <div id="products">
+                <!-- Producto 1 -->
+                <div class="product">
+                    <h3>Heroin</h3>
+                    <img src="img/producto1.jpg" alt="Imagen de Heroin">
+                    <p><strong>Precio:</strong> $2,000 COP</p>
+                    <p><strong>Descripción:</strong> Heroin de alta calidad...</p>
+                    <a href="producto1.html"><button>Ver Detalles</button></a>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product">
+                    <h3>Dope</h3>
+                    <img src="img/producto2.jpg" alt="Imagen de Dope">
+                    <p><strong>Precio:</strong> $2,200 COP</p>
+                    <p><strong>Descripción:</strong> Producto de alta calidad...</p>
+                    <a href="producto2.html"><button>Ver Detalles</button></a>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product">
+                    <h3>Coca</h3>
+                    <img src="img/producto3.jpg" alt="Imagen de Coca">
+                    <p><strong>Precio:</strong> $30,000 COP</p>
+                    <p><strong>Descripción:</strong> Coca de alta pureza...</p>
+                    <a href="producto3.html"><button>Ver Detalles</button></a>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="product">
+                    <h3>Crack</h3>
+                    <img src="img/producto4.jpg" alt="Imagen de Crack">
+                    <p><strong>Precio:</strong> $5,000 COP</p>
+                    <p><strong>Descripción:</strong> Crack de alta calidad...</p>
+                    <a href="producto4.html"><button>Ver Detalles</button></a>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="product">
+                    <h3>MDMA</h3>
+                    <img src="img/producto5.jpg" alt="Imagen de MDMA">
+                    <p><strong>Precio:</strong> $8,000 COP</p>
+                    <p><strong>Descripción:</strong> MDMA de alta pureza...</p>
+                    <a href="producto5.html"><button>Ver Detalles</button></a>
+                </div>
+
+                <!-- Producto 6 -->
+                <div class="product">
+                    <h3>LSD</h3>
+                    <img src="img/producto6.jpg" alt="Imagen de LSD">
+                    <p><strong>Precio:</strong> $4,000 COP</p>
+                    <p><strong>Descripción:</strong> LSD conocido por sus efectos psicodélicos...</p>
+                    <a href="producto6.html"><button>Ver Detalles</button></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="cart-icon" onclick="showCart()">
+        🛒
+        <span class="cart-count">0</span>
+    </div>
+
+    <div id="cart" class="cart">
+        <h3>Carrito</h3>
+        <div id="cart-items">
+            <p>No hay productos en el carrito</p>
+        </div>
+        <div class="cart-total">
+            <strong>Total: </strong><span id="cart-total">0 COP</span>
+        </div>
+        <button class="checkout-btn">Pagar</button>
+        <button class="close-cart-btn" onclick="closeCart()">Cerrar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
